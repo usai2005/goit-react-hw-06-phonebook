@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './ContactListItem.module.css';
 import { useDispatch } from 'react-redux';
-import { contactDelete } from '../../redux/actions';
+import { contactDelete } from '../../redux/contactsSlice';
 
 export const ContactListItem = ({
   transferRenderListItem: { id, name, number },

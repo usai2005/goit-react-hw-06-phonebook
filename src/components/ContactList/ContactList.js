@@ -7,9 +7,6 @@ export const ContactList = () => {
   const contacts = useSelector(getContacts);
   const filterValue = useSelector(getFilter);
 
-  console.log(contacts);
-  console.log(filterValue);
-
   const getFoundContacts = () => {
     const filterToLowerCase = filterValue.toLowerCase();
 
@@ -19,8 +16,6 @@ export const ContactList = () => {
   };
 
   const renderList = getFoundContacts();
-
-  console.log(renderList);
 
   return (
     <ul className={css.contact__list}>
